@@ -15,7 +15,7 @@
     "@nativescript/nx": "17",
     "@nativescript/types": "~8.6.0",
     "@nativescript/webpack": "~5.0.0",
-    "@ngtools/webpack": "^16.0.0",
+    "@ngtools/webpack": "^17.0.0",
     "@nx/js": "18.1.2",
     "@nx/workspace": "18.1.2",
     "@swc-node/register": "~1.6.7",
@@ -39,7 +39,7 @@
     "@nativescript/core": "^8.6.2",
     "nativescript-theme-core": "~1.0.4",
     "rxjs": "~7.8.0",
-    "zone.js": "^0.13.0"
+    "zone.js": "~0.14.0"
   },
   "nativescript-nx": {
     "prefix": "rfs-angular-nativescript-workspace",
