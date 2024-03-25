@@ -1,4 +1,4 @@
-# RfsAngularNativescriptWorkspace
+# RFS Angular/Nativescript Workspace
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
@@ -11,6 +11,8 @@ provides an interactive UI to view your projects, run tasks, generate code, and 
 comes with a LSP for Vim users.
 
 ## Nx plugins and code generators
+
+These are just examples...
 
 Add Nx plugins to leverage their code generators and automated, inferred tasks.
 
