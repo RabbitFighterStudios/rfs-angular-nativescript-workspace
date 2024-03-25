@@ -1,0 +1,18 @@
+{
+  "name": "@rfs-angular-nativescript-workspace/source",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "private": true,
+  "devDependencies": {
+    "@angular/cli": "^17.3.1",
+    "@angular/core": "^17.3.1",
+    "@nativescript/android": "^8.6.2",
+    "@nativescript/angular": "^17.0.0",
+    "@nativescript/ios": "^8.6.4",
+    "@nativescript/nx": "^17.1.0",
+    "@nx/js": "18.1.2",
+    "@nx/workspace": "18.1.2",
+    "nx": "18.1.2"
+  }
+}
