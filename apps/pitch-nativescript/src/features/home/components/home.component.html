@@ -2,22 +2,30 @@
 <StackLayout class="p-20">
   <Label text="Enjoy" class="h1 text-center c-white"></Label>
   <Image
-    src="~/assets/images/nx-nativescript.png"
+    src="https://imgur.com/dLhkXxy.png"
     class="h-center m-t-20"
     width="300"
   ></Image>
 
-  <WrapLayout class="m-t-20">
-    <Button text="Go to web" class="btn btn-primary"></Button>
-    <Button text="Go to angular" class="btn btn-primary"></Button>
+  <WrapLayout class="m-t-20 h-center p-l-35 m-l-20">
+    <Button
+      text="Login"
+      class="rfs-btn--primary btn-rounded-md p-4"
+      (tap)="onLogin()"
+    ></Button>
+    <Button
+      text="Register"
+      class="rfs-btn--secondary btn-rounded-md m-l-10 p-4"
+      (tap)="onRegister()"
+    ></Button>
+
+    <Button
+      text="About"
+      class="rfs-btn--accent btn-rounded-md m-l-10 p-4"
+      (tap)="goToDetails()"
+    ></Button>
   </WrapLayout>
 
-  <ScrollView>
-    <StackLayout class="m-t-20">
-      <TextView
-        class="h2 text-center"
-        text="This is a nativescript application in an Nx workspace that uses angular and typescript for components. Multiple applications can have shared resources like NgRx state management and other libraries like UI libs and data libs and can be used for web, iOS and Android applications in the monorepo. - J.C."
-      ></TextView>
-    </StackLayout>
-  </ScrollView>
+  <Label text="POC built with ❤️ by JC" class="h2 text-center c-white m-t-20">
+  </Label>
 </StackLayout>
