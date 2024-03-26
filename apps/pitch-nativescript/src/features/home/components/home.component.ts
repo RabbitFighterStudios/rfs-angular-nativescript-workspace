@@ -9,6 +9,14 @@ const items = Array.from({ length: 100 }).map((_, i) => ({
 @Component({
   moduleId: module.id,
   selector: 'app-home',
+  styles: [
+    `
+      .btn-rounded-sm {
+        border-radius: 100px;
+        background-color: #fc4d67;
+      }
+    `,
+  ],
   templateUrl: './home.component.html',
 })
 export class HomeComponent {

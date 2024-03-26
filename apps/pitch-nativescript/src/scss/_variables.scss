@@ -5,25 +5,6 @@ $primary: #333; // #fc4d67;
 $accent: #97d9e9;
 $secondary: #fc4d67;
 
-.rfs-btn {
-  border-radius: 5px !important;
-  padding: 45px !important;
-  margin: 45px !important;
-  text-align: center;
-  &--primary {
-    background-color: #777;
-    color: white;
-  }
-  &--secondary {
-    background-color: $secondary;
-    color: white;
-  }
-  &--accent {
-    background-color: $accent;
-    color: white;
-  }
-}
-
 .mt-20 {
   margin-top: 350px;
 }
