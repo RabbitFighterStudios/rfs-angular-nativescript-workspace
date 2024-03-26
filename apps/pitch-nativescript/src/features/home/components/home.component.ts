@@ -15,6 +15,15 @@ const items = Array.from({ length: 100 }).map((_, i) => ({
         border-radius: 100px;
         background-color: #fc4d67;
       }
+
+      .h-center {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+      }
     `,
   ],
   templateUrl: './home.component.html',
