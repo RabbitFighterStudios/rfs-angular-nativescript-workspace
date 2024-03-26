@@ -1,5 +1,11 @@
 @import 'nativescript-theme-core/scss/variables';
 
 // app specific: override or add new variables...
-$primary: #143055;
+$primary: #333; // #fc4d67;
 $accent: #97d9e9;
+
+.btn-primary {
+  background-color: $primary;
+  color: white;
+  width: 100%;
+}
