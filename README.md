@@ -6,7 +6,7 @@
 
 ## Initial POC iOS screenshot
 
-![MIDI Pitch Control](~/assets/images/demonstration.png)
+![MIDI Pitch Control](https://imgur.com/NKbmHau.png)
 
 ## Integrate with editors
 
