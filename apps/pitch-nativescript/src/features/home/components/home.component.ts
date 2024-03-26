@@ -16,6 +16,12 @@ const items = [`First`, `Second`, `Third`];
         color: black;
         background-color: #f9d369;
       }
+      .tagline {
+        font-size: 12px;
+        font-weight: 600;
+        color: white;
+        margin-top: 8px;
+      }
     `,
   ],
   templateUrl: './home.component.html',
