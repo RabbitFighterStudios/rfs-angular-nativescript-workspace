@@ -1,20 +1,23 @@
 <ActionBar title="My App" class="action-bar" flat="true"> </ActionBar>
 <StackLayout class="p-20">
   <Label text="Enjoy" class="h1 text-center c-white"></Label>
-  <!--<Image
+  <Image
     src="~/assets/images/nx-nativescript.png"
     class="h-center m-t-20"
     width="300"
-  ></Image>-->
+  ></Image>
 
-  <WrapLayout class="m-t-20 mb-0">
-    <Button text="Go to web" class="p-3 btn btn-primary"></Button>
-    <Button text="Go to angular" class="p-3 btn btn-primary"></Button>
-
-    @for (item of listOfPerks; track item) {
-    <textView class="h2 text-center c-white">
-      {{ item }}
-    </textView>
-    }
+  <WrapLayout class="m-t-20">
+    <Button text="Go to web" class="btn btn-primary"></Button>
+    <Button text="Go to angular" class="btn btn-primary"></Button>
   </WrapLayout>
+
+  <ScrollView>
+    <StackLayout class="m-t-20">
+      <TextView
+        class="h2 text-center"
+        text="This is a nativescript application in an Nx workspace that uses angular and typescript for components. Multiple applications can have shared resources like NgRx state management and other libraries like UI libs and data libs and can be used for web, iOS and Android applications in the monorepo. - J.C."
+      ></TextView>
+    </StackLayout>
+  </ScrollView>
 </StackLayout>
