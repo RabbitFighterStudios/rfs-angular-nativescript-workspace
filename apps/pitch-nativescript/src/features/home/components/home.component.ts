@@ -2,28 +2,19 @@ import { Component } from '@angular/core';
 import { setStatusBarColor } from '../../../utils';
 import { EventData, Frame, NavigatedData, Page } from '@nativescript/core';
 
-const items = Array.from({ length: 100 }).map((_, i) => ({
-  title: `Item ${i}`,
-}));
-
+const items = [`First`, `Second`, `Third`];
 @Component({
   moduleId: module.id,
   selector: 'app-home',
   styles: [
     `
       .btn-rounded-sm {
-        border-radius: 100px;
-        background-color: #fc4d67;
-      }
-
-      .h-center {
-        width: 100%;
-        color: white;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        align-items: center;
+        border-radius: 12px;
+        margin: 4px 8px;
+        font-size: 13px;
+        font-weight: 600;
+        color: black;
+        background-color: #f9d369;
       }
     `,
   ],
@@ -37,7 +28,10 @@ export class HomeComponent {
     '∆ngular / NativeScript POC by Joshua Calafell',
   ];
 
+  items: Array<string | number>;
+
   ngOnInit() {
+    this.items = items;
     setStatusBarColor('dark', '#333');
   }
 

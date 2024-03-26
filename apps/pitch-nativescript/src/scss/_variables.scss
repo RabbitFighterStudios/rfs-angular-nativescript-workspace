@@ -1,10 +1,6 @@
 @import 'nativescript-theme-core/scss/variables';
 
 // app specific: override or add new variables...
-$primary: #333; // #fc4d67;
+$primary: #333;
 $accent: #97d9e9;
 $secondary: #fc4d67;
-
-.mt-20 {
-  margin-top: 350px;
-}
