@@ -18,6 +18,7 @@ const items = Array.from({ length: 100 }).map((_, i) => ({
 
       .h-center {
         width: 100%;
+        color: white;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
