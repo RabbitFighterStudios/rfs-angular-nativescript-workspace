@@ -1,56 +1,62 @@
 import { Component } from '@angular/core';
 import { setStatusBarColor } from '../../../utils';
-import { EventData, Frame, NavigatedData, Page } from '@nativescript/core';
+import { EventData, NavigatedData, Page } from '@nativescript/core';
 
-const items = [`First`, `Second`, `Third`];
 @Component({
   moduleId: module.id,
   selector: 'app-home',
   styles: [
     `
-      .btn-rounded-sm {
-        border-radius: 12px;
-        margin: 4px 8px;
-        font-size: 13px;
-        font-weight: 600;
-        color: black;
-        background-color: #f9d369;
+      @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+      .btn-rfs-rounded {
+        border-radius: 8px;
+        height: 38rem;
+        font-family: 'Poppins', sans-serif !important;
+        font-weight: 500;
+        color: #333;
+        background-color: #f9d369 !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
       }
+
       .tagline {
-        font-size: 12px;
+        padding-top: 56px;
+        font-size: 22px;
         font-weight: 600;
+        text-align: center;
+        font-family: 'Poppins', sans-serif !important;
         color: white;
-        margin-top: 8px;
+      }
+
+      .description {
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        font-family: 'Inter', sans-serif !important;
+        color: white;
+      }
+
+      .flex-row-layout {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
       }
     `,
   ],
   templateUrl: './home.component.html',
 })
 export class HomeComponent {
-  listOfPerks = [
-    'This is a nativescript application in an Nx workspace',
-    'Multiple applications can have shared resources like NgRx',
-    'UI libs and data libs and can be used for web, iOS and Android',
-    '∆ngular / NativeScript POC by Joshua Calafell',
-  ];
-
-  items: Array<string | number>;
-
   ngOnInit() {
-    this.items = items;
     setStatusBarColor('dark', '#333');
   }
 
-  onLogin() {
-    alert('Logging in');
-  }
-
-  onRegister() {
-    alert('Registering');
-  }
-
-  goToDetails() {
-    alert('Going to details');
+  goTo(destination: string) {
+    alert('Going to ' + destination);
   }
 
   onLoaded(args: EventData) {

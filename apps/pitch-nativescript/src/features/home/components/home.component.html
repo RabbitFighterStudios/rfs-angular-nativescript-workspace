@@ -1,39 +1,43 @@
 <ActionBar title="RFS MIDI" class="action-bar" flat="true"> </ActionBar>
-<StackLayout class="m-b-20 m-t-20">
-  <Label text="MIDI Pitch App" class="h1 text-center c-white m-y-20"></Label>
+<StackLayout class="m-b-20">
+  <Label text="MIDI PITCH" class="h1 tagline m-y-20"></Label>
   <Image
-    src="~/assets/images/background.png"
+    src="https://i.imgur.com/lFjIEFV.png"
     class="h-center m-t-30 m-b-30"
     width="220"
   ></Image>
 
-  <FlexboxLayout class="m-t-30 m-l-10" flexWrap="wrap" backgroundColor="#333">
+  <FlexboxLayout
+    class="m-t-30 flex-row-layout m-x-30"
+    flexWrap="wrap"
+    backgroundColor="#333"
+  >
     <Button
-      text="Login"
+      text="Notes"
       width="30%"
-      class="btn-rounded-sm p-t-10 m-x-5 p-b-10 text-white"
-      (tap)="onLogin()"
+      class="m-r-2 btn-rfs-rounded c-black"
+      (tap)="goTo('Notes')"
     ></Button>
     <Button
-      text="Register"
+      text="Scales"
       width="30%"
-      class="btn-rounded-sm text-white"
-      (tap)="onRegister()"
+      class="m-x-1 btn-rfs-rounded c-black"
+      (tap)="goTo('Scales')"
     ></Button>
 
     <Button
-      text="About"
+      text="Settings"
       width="30%"
-      class="btn-rounded-sm text-white"
-      (tap)="goToDetails()"
+      class="m-l-2 btn-rfs-rounded c-black"
+      (tap)="goTo('Settings')"
     ></Button>
   </FlexboxLayout>
 
   <WrapLayout class="m-t-30 m-b-30 h-center m-l-30 p-l-20"> </WrapLayout>
 
   <Label
-    text="∆ngular/NativeScript POC by RFS"
-    class="mt-20 h2 tagline text-center c-white"
+    text="POC running Angular/NativeScript/NgRx"
+    class="description mt-20 h2 text-center c-white"
   >
   </Label>
 </StackLayout>
