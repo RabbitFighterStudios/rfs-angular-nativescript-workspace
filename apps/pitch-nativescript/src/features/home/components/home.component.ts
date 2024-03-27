@@ -8,15 +8,15 @@ import { EventData, NavigatedData, Page } from '@nativescript/core';
   styles: [
     `
       @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
       .btn-rfs-rounded {
         border-radius: 8px;
         height: 38rem;
-        font-family: 'Poppins', sans-serif !important;
+        font-family: 'Inter', sans-serif !important;
         font-weight: 500;
-        color: #333;
-        background-color: #f9d369 !important;
+        color: #ffffff;
+        background-color: #fc4d67 !important;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -28,7 +28,7 @@ import { EventData, NavigatedData, Page } from '@nativescript/core';
         font-size: 22px;
         font-weight: 600;
         text-align: center;
-        font-family: 'Poppins', sans-serif !important;
+        font-family: 'Roboto+Condensed', sans-serif !important;
         color: white;
       }
 
@@ -45,6 +45,14 @@ import { EventData, NavigatedData, Page } from '@nativescript/core';
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+      }
+
+      .yellow {
+        color: #f9d369;
+      }
+
+      .teal {
+        color: #00bfa5;
       }
     `,
   ],
