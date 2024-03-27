@@ -5,57 +5,7 @@ import { EventData, NavigatedData, Page } from '@nativescript/core';
 @Component({
   moduleId: module.id,
   selector: 'app-home',
-  styles: [
-    `
-      @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-
-      .btn-rfs-rounded {
-        border-radius: 8px;
-        height: 38rem;
-        font-family: 'Inter', sans-serif !important;
-        font-weight: 500;
-        color: #ffffff;
-        background-color: #fc4d67 !important;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .tagline {
-        padding-top: 56px;
-        font-size: 22px;
-        font-weight: 600;
-        text-align: center;
-        font-family: 'Roboto+Condensed', sans-serif !important;
-        color: white;
-      }
-
-      .description {
-        font-size: 18px;
-        font-weight: 500;
-        text-align: center;
-        font-family: 'Inter', sans-serif !important;
-        color: white;
-      }
-
-      .flex-row-layout {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .yellow {
-        color: #f9d369;
-      }
-
-      .teal {
-        color: #00bfa5;
-      }
-    `,
-  ],
+  styleUrls: ['./home.component.scss'],
   templateUrl: './home.component.html',
 })
 export class HomeComponent {
