@@ -10,7 +10,7 @@ import { EventData, NavigatedData, Page } from '@nativescript/core';
 })
 export class HomeComponent {
   ngOnInit() {
-    setStatusBarColor('dark', '#333');
+    setStatusBarColor('dark', '#232323');
   }
 
   goTo(destination: string) {
