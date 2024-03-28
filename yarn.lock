@@ -2210,7 +2210,7 @@
   resolved "https://registry.yarnpkg.com/@nativescript/ios/-/ios-8.6.4.tgz#db629ba5bf1bce8a7eaf48ed6b29126d7e28837d"
   integrity sha512-G3zcfdPco0zWaVpU7bBXVBu2zfzhcQ4KQjqL/SW887KdTjMHxkCYX8HFU+6buFzQin0FyTiSDvjfwlO/QGRlJg==
 
-"@nativescript/nx@17":
+"@nativescript/nx@^17.1.0":
   version "17.1.0"
   resolved "https://registry.yarnpkg.com/@nativescript/nx/-/nx-17.1.0.tgz#b1cbf444d84199f3ec23bdde564ce6c4b6b314e8"
   integrity sha512-S46LoSzR98GGc6VHymLKG45lmCXLCr9rMu73lPMiqDUrbrZotvXFTewh2D6E/Q+V9IunQ3MvRbU07lIxhU9zcw==
