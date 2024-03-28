@@ -17,18 +17,6 @@ export const routes: Routes = [
     path: '',
     component: HomeComponent,
   },
-  {
-    path: 'notes',
-    component: NotesComponent,
-  },
-  {
-    path: 'scales',
-    component: ScalesComponent,
-  },
-  {
-    path: 'settings',
-    component: SettingsComponent,
-  },
 ];
 
 @NgModule({

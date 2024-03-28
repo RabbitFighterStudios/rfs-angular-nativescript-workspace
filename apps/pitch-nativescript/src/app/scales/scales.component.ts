@@ -1,12 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'scales',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './scales.component.html',
-  styleUrl: './scales.component.css'
+  styleUrl: './scales.component.scss',
 })
-export class ScalesComponent {
-
-}
+export class ScalesComponent {}

@@ -1,6 +1,5 @@
 <ActionBar title="RFS MIDI" class="action-bar" flat="true"> </ActionBar>
 
-<router-outelt></router-outelt>
 <StackLayout class="m-b-10 p-x-10">
   <Label text="MIDI PITCH" class="h1 tagline m-t-10"></Label>
   <Image
@@ -10,32 +9,30 @@
   ></Image>
 
   <FlexboxLayout
-    class="flex-row-layout p-y-10 p-x-10 m-t-30 p-5 h-center"
+    class="flex-row-layout p-y-10 p-x-10 m-t-30 m-b-30 h-center"
     flexWrap="wrap"
     backgroundColor="#333"
   >
     <Button
       text="Notes"
-      width="30%"
-      class="m-r-2 btn-rfs-rounded c-black"
+      width="28%"
+      class="btn-rfs-rounded c-black"
       (tap)="goTo('Notes')"
     ></Button>
     <Button
       text="Scales"
-      width="30%"
-      class="m-x-1 btn-rfs-rounded c-black"
+      width="28%"
+      class="btn-rfs-rounded c-black"
       (tap)="goTo('Scales')"
     ></Button>
 
     <Button
       text="Settings"
-      width="30%"
-      class="m-l-2 btn-rfs-rounded c-black"
+      width="28%"
+      class="btn-rfs-rounded c-black"
       (tap)="goTo('Settings')"
     ></Button>
   </FlexboxLayout>
-
-  <WrapLayout class="m-t-10 m-b-30 h-center m-l-20 p-l-20"> </WrapLayout>
 
   <Label
     text="POC for Web/iOS/Android"
