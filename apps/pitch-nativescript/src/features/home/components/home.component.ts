@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { setStatusBarColor } from '../../../utils';
 import { EventData, NavigatedData, Page } from '@nativescript/core';
+import { Router } from '@angular/router';
 
 @Component({
   moduleId: module.id,
@@ -9,42 +10,31 @@ import { EventData, NavigatedData, Page } from '@nativescript/core';
   templateUrl: './home.component.html',
 })
 export class HomeComponent {
+
+  router = inject(Router);
+
+  constructor() {}
+
   ngOnInit() {
     setStatusBarColor('dark', '#232323');
   }
 
-  goTo(destination: string) {
-    alert('Going to ' + destination);
+  goTo(destination: string): void {
+    if (destination === 'Notes') {
+      try {
+        this.router.navigate(['/notes']);
+      } catch (error) {
+        console.error(error);
+      }
+
+    } else {
+      alert('Going to ' + destination);
+    }
+
   }
 
-  onLoaded(args: EventData) {
-    const page = args.object as Page;
-  }
 
-  onUnloaded(args: EventData) {
-    const page = args.object as Page;
-  }
 
-  onLayoutChanged(args: EventData) {
-    const page = args.object as Page;
-  }
 
-  onNavigatedTo(args: NavigatedData) {
-    const page = args.object as Page;
-    console.log(args.isBackNavigation);
-  }
 
-  onNavigatingFrom(args: NavigatedData) {
-    const page = args.object as Page;
-    console.log(args.isBackNavigation);
-  }
-
-  onNavigatedFrom(args: NavigatedData) {
-    const page = args.object as Page;
-    console.log(args.isBackNavigation);
-  }
-
-  onNavigateToList() {
-    console.log('Navigating to list');
-  }
 }

@@ -10,7 +10,6 @@
     "importHelpers": true,
     "noEmitHelpers": true,
     "noEmitOnError": true,
-
     "target": "es2020",
     "module": "esnext",
     "lib": ["es2020", "dom"],
@@ -18,8 +17,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["src/*"],
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "~/*": ["src/*"]
     }
   },
   "exclude": ["node_modules", "tmp", "e2e"]
