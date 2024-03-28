@@ -15,8 +15,13 @@
 }
 
 .border {
-  border: solid 2px white !important;
   border-radius: 8px;
+
+  img {
+    padding: 0px;
+    border: 0px;
+    background: #232323;
+  }
 }
 
 .tagline {

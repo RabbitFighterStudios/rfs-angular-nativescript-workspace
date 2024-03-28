@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'notes',
+  selector: 'settings',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './notes.component.html',
-  styleUrl: './notes.component.css',
+  templateUrl: './settings.component.html',
+  styleUrl: './settings.component.css',
 })
-export class NotesComponent {}
+export class SettingsComponent {}

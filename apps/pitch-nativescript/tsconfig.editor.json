@@ -5,6 +5,6 @@
     "types": ["jest", "node"]
   },
   "angularCompilerOptions": {
-    "strictTemplates": false,
+    "strictTemplates": true
   }
 }

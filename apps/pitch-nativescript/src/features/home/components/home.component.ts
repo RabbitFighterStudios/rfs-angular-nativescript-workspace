@@ -10,31 +10,16 @@ import { Router } from '@angular/router';
   templateUrl: './home.component.html',
 })
 export class HomeComponent {
-
   router = inject(Router);
-
-  constructor() {}
 
   ngOnInit() {
     setStatusBarColor('dark', '#232323');
   }
 
-  goTo(destination: string): void {
-    if (destination === 'Notes') {
-      try {
-        this.router.navigate(['/notes']);
-      } catch (error) {
-        console.error(error);
-      }
-
-    } else {
-      alert('Going to ' + destination);
+  goTo(destination: 'Notes' | 'Scales' | 'Settings'): void {
+    if (this.router) {
+      this.router.navigate([destination.toLowerCase()]);
+      return;
     }
-
   }
-
-
-
-
-
 }
