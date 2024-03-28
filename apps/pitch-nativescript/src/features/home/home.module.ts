@@ -8,11 +8,26 @@ import { NativeScriptRouterModule } from '@nativescript/angular';
 
 import { SharedModule } from '../shared/shared.module';
 import { HOME_COMPONENTS, HomeComponent } from './components';
+import { NotesComponent } from '../../app/notes/notes.component';
+import { ScalesComponent } from '../../app/scales/scales.component';
+import { SettingsComponent } from '../../app/settings/settings.component';
 
 export const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
+  },
+  {
+    path: 'notes',
+    component: NotesComponent,
+  },
+  {
+    path: 'scales',
+    component: ScalesComponent,
+  },
+  {
+    path: 'settings',
+    component: SettingsComponent,
   },
 ];
 
