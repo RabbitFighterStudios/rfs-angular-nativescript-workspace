@@ -10,7 +10,7 @@ Workspace meant to house projects that relate to MIDI and software/hardware desi
 
 ## IPad Pro (12.9-inch iOS 17.0)
 
-![IPadPro](https://imgur.com/undefined.png)
+![IPadPro](https://imgur.com/eoxpkqR.png)
 
 ## Tech Stack and reasoning
 
