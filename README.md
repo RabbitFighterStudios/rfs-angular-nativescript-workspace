@@ -6,15 +6,11 @@ Workspace meant to house projects that relate to MIDI and software/hardware desi
 
 ### iPhone 15 Pro Max (iOS 17.0)
 
-![iOS](https://imgur.com/gT4YWyU.png)
-
-### Pixel 6 Pro (API 30)
-
-![Android](https://imgur.com/yQ3yXAs.png)
+![iOS](https://imgur.com/wOVR0Df.png)
 
 ## IPad Pro (12.9-inch iOS 17.0)
 
-![IPadPro](https://imgur.com/DgtnFca.png)
+![IPadPro](https://imgur.com/undefined.png)
 
 ## Tech Stack and reasoning
 

@@ -4,33 +4,33 @@
   <Label text="MIDI PITCH" class="h1 tagline m-t-10"></Label>
   <Image
     src="https://imgur.com/P5IEkH2.png"
-    class="image border h-center m-t-30 m-b-30"
+    class="image h-center m-t-30 m-b-30"
     width="60%"
   ></Image>
 
   <FlexboxLayout
-    class="flex-row-layout p-y-10 p-x-10 m-t-30 m-b-30 h-center"
+    class="flex flex-row h-center m-b-30"
     flexWrap="wrap"
-    backgroundColor="#333"
+    backgroundColor="#232323"
   >
     <Button
       text="Notes"
-      width="28%"
-      class="btn-rfs-rounded c-black"
-      (tap)="goTo('Notes')"
+      width="30%"
+      class="btn btn-primary c-black"
+      (tap)="goTo('notes')"
     ></Button>
     <Button
       text="Scales"
-      width="28%"
-      class="btn-rfs-rounded c-black"
-      (tap)="goTo('Scales')"
+      width="31%"
+      class="btn btn-primary c-black"
+      (tap)="goTo('scales')"
     ></Button>
 
     <Button
       text="Settings"
-      width="28%"
-      class="btn-rfs-rounded c-black"
-      (tap)="goTo('Settings')"
+      width="30%"
+      class="btn btn-primary c-black"
+      (tap)="goTo('settings')"
     ></Button>
   </FlexboxLayout>
 
@@ -55,7 +55,7 @@
   >
   </Label>
   <Label
-    class="m-t-10 m-t-20 h2 text-center teal"
+    class="m-t-10 m-t-20 h2 text-center c-white"
     target="_blank"
     text="@RabbitFighterStudios on GitHub"
   >

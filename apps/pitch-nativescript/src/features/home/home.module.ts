@@ -1,7 +1,7 @@
 import {
-  NgModule,
-  NO_ERRORS_SCHEMA,
   CUSTOM_ELEMENTS_SCHEMA,
+  NO_ERRORS_SCHEMA,
+  NgModule,
 } from '@angular/core';
 import { Routes } from '@angular/router';
 import { NativeScriptRouterModule } from '@nativescript/angular';
@@ -9,8 +9,8 @@ import { NativeScriptRouterModule } from '@nativescript/angular';
 import { SharedModule } from '../shared/shared.module';
 import { HOME_COMPONENTS, HomeComponent } from './components';
 import { NotesComponent } from '../../app/notes/notes.component';
-import { ScalesComponent } from '../../app/scales/scales.component';
 import { SettingsComponent } from '../../app/settings/settings.component';
+import { ScalesComponent } from '../../app/scales/scales.component';
 
 export const routes: Routes = [
   {

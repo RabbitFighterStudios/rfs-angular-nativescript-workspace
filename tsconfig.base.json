@@ -21,5 +21,9 @@
       "~/*": ["src/*"]
     }
   },
+  "angularCompilerOptions": {
+    "enableIvy": true,
+    "strictTemplates": true
+  },
   "exclude": ["node_modules", "tmp", "e2e"]
 }
