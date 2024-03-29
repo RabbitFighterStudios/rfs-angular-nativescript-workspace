@@ -27,7 +27,9 @@ jobs:
       # - run: npx nx-cloud start-ci-run --distribute-on="5 linux-medium-js" --stop-agents-after="e2e-ci"
       - run: yarn ci
 
-      - uses: nrwl/nx-set-shas@v3
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       # This line is needed for nx affected to work when CI is running on a PR
       - run: git branch --track main origin/main
 
