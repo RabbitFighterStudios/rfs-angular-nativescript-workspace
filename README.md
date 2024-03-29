@@ -6,7 +6,7 @@ Workspace meant to house projects that relate to MIDI and software/hardware desi
 
 ### iPhone 15 Pro Max (iOS 17.0)
 
-![iOS](https://imgur.com/wOVR0Df.png)
+![iOS](https://imgur.com/XP7gVNV.png)
 
 ## IPad Pro (12.9-inch iOS 17.0)
 
