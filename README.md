@@ -10,7 +10,7 @@ Workspace meant to house projects that relate to MIDI and software/hardware desi
 
 ## IPad Pro (12.9-inch iOS 17.0)
 
-![IPadPro](https://imgur.com/eoxpkqR.png)
+![IPadPro Movie](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHhhcGs0aHNlaDk4bHM0MHR5a2RkNWdvMW05MTVudW12djlsdHduNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SbkwatHLEh9ZqVIttt/giphy.gif)
 
 ## Tech Stack and reasoning
 

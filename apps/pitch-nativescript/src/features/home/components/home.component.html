@@ -1,6 +1,6 @@
 <ActionBar title="RFS MIDI" class="action-bar" flat="true"> </ActionBar>
 
-<StackLayout class="m-b-10 p-x-10">
+<StackLayout class="m-b-10">
   <Label text="MIDI PITCH" class="h1 tagline m-t-10"></Label>
   <Image
     src="https://imgur.com/P5IEkH2.png"
@@ -9,26 +9,29 @@
   ></Image>
 
   <FlexboxLayout
-    class="flex flex-row h-center m-b-30"
-    flexWrap="wrap"
+    class="m-b-30 m-x-10 p-x-10"
+    flexDirection="row"
+    justifyContent="space-between"
+    alignItems="center"
+    height="10%"
     backgroundColor="#232323"
   >
     <Button
       text="Notes"
-      width="30%"
+      width="33%"
       class="btn btn-primary c-black"
       (tap)="goTo('notes')"
     ></Button>
     <Button
       text="Scales"
-      width="30%"
+      width="33%"
       class="btn btn-primary c-black"
       (tap)="goTo('scales')"
     ></Button>
 
     <Button
       text="Settings"
-      width="30%"
+      width="33%"
       class="btn btn-primary c-black"
       (tap)="goTo('settings')"
     ></Button>
@@ -36,7 +39,7 @@
 
   <Label
     text="POC for Web/iOS/Android"
-    class="description mt-20 h2 text-center c-white"
+    class="description mt-20 h3 text-center c-white"
   >
   </Label>
   <Label
@@ -55,7 +58,7 @@
   >
   </Label>
   <Label
-    class="m-t-10 m-t-20 h2 text-center c-white"
+    class="m-t-10 m-t-20 h2 text-center yellow"
     target="_blank"
     text="@RabbitFighterStudios on GitHub"
   >
