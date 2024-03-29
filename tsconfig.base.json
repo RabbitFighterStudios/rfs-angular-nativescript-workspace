@@ -18,6 +18,8 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
+      "@rfs/is-even": ["libs/is-even/src/index.ts"],
+      "@rfs/is-odd": ["libs/is-odd/src/index.ts"],
       "~/*": ["src/*"]
     }
   },
