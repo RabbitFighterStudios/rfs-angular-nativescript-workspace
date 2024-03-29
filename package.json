@@ -2,7 +2,9 @@
   "name": "@rfs-angular-nativescript-workspace/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "npm": "nx"
+  },
   "private": true,
   "devDependencies": {
     "@angular-devkit/build-angular": "^17.3.2",
