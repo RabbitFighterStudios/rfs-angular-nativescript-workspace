@@ -69,6 +69,7 @@
     "@angular/router": "^17.3.1",
     "@nativescript/angular": "^17.0.0",
     "@nativescript/core": "^8.6.2",
+    "@nativescript/schematics": "^11.2.0",
     "@nativescript/theme": "^3.0.2",
     "@ngrx/component-store": "~17.0.0",
     "@ngrx/effects": "~17.0.0",
@@ -81,7 +82,7 @@
     "zone.js": "~0.14.0"
   },
   "nativescript-nx": {
-    "prefix": "rfs-angular-nativescript-workspace",
+    "prefix": "rfs",
     "framework": "angular",
     "groupByName": true,
     "packageManager": "yarn"

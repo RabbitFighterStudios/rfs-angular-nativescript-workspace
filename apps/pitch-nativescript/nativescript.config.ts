@@ -1,16 +1,16 @@
-import { NativeScriptConfig } from '@nativescript/core';
+import { NativeScriptConfig } from '@nativescript/core'
 
 export default {
-	id: 'org.nativescript.pitch',
-	appResourcesPath: 'App_Resources',
-	android: {
-		v8Flags: '--expose_gc',
+  id: 'org.nativescript.pitch',
+  appResourcesPath: 'App_Resources',
+  android: {
+    v8Flags: '--expose_gc',
     markingMode: 'none',
     codeCache: true,
-    suppressCallJSMethodExceptions: false
+    suppressCallJSMethodExceptions: false,
   },
   ios: {
-    discardUncaughtJsExceptions: false
+    discardUncaughtJsExceptions: false,
   },
-	appPath: 'src',
-} as NativeScriptConfig;
+  appPath: 'src',
+} as NativeScriptConfig

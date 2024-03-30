@@ -1,15 +1,15 @@
 //#!/usr/bin/env node
 
-const fs = require('fs-extra');
-const path = require('path');
-const childProcess = require('child_process');
+const fs = require('fs-extra')
+const path = require('path')
+const childProcess = require('child_process')
 
 // Copy potential hooks from root dependencies to app
-const hooksSrc = '../../hooks';
-const hooksDest = 'hooks';
-console.info(`Copying ${hooksSrc} -> ${hooksDest}`);
+const hooksSrc = '../../hooks'
+const hooksDest = 'hooks'
+console.info(`Copying ${hooksSrc} -> ${hooksDest}`)
 try {
-  fs.copySync(hooksSrc, hooksDest);
+  fs.copySync(hooksSrc, hooksDest)
 } catch (err) {
   // ignore
 }

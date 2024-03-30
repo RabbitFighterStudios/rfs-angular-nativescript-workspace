@@ -1,10 +1,9 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core'
 
 @Component({
-  selector: 'settings',
-  standalone: true,
-  imports: [CommonModule],
+  moduleId: module.id,
+  selector: 'rfs-settings',
+  standalone: false,
   templateUrl: './settings.component.html',
   styleUrl: './settings.component.scss',
 })

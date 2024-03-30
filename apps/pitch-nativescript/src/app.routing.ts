@@ -1,15 +1,14 @@
 // angular
-import { NgModule } from '@angular/core';
-import { Routes } from '@angular/router';
+import { NgModule } from '@angular/core'
+import { Routes } from '@angular/router'
 
 // nativescript
-import { NativeScriptRouterModule } from '@nativescript/angular';
+import { NativeScriptRouterModule } from '@nativescript/angular'
 
 // app
-import { SharedModule } from './features/shared/shared.module';
-import { NotesComponent } from './app/notes/notes.component';
-import { ScalesComponent } from './app/scales/scales.component';
-import { SettingsComponent } from './app/settings/settings.component';
+import { SharedModule } from './features/shared/shared.module'
+import { ScalesComponent } from './app/scales/scales.component'
+import { SettingsComponent } from './app/settings/settings.component'
 
 const routes: Routes = [
   {
@@ -24,17 +23,20 @@ const routes: Routes = [
   },
   {
     path: 'notes',
-    component: NotesComponent,
+    loadChildren: () =>
+      import('./app/notes/notes.module').then((m) => m.NotesModule),
   },
   {
     path: 'scales',
-    component: ScalesComponent,
+    loadChildren: () =>
+      import('./app/scales/scales.module').then((m) => m.ScalesModule),
   },
   {
     path: 'settings',
-    component: SettingsComponent,
+    loadChildren: () =>
+      import('./app/settings/settings.module').then((m) => m.SettingsModule),
   },
-];
+]
 
 @NgModule({
   imports: [SharedModule, NativeScriptRouterModule.forRoot(routes)],

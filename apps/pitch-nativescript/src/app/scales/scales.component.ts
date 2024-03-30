@@ -1,10 +1,9 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
-  selector: 'scales',
-  standalone: true,
-  imports: [CommonModule],
+  moduleId: module.id,
+  selector: 'rfs-scales',
+  standalone: false,
   templateUrl: './scales.component.html',
   styleUrl: './scales.component.scss',
 })

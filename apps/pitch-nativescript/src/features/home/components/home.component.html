@@ -1,4 +1,4 @@
-<ActionBar title="RFS MIDI" class="action-bar" flat="true"> </ActionBar>
+<ActionBar title="RFS MIDI" class="action-bar" flat="false"> </ActionBar>
 
 <StackLayout class="m-b-10">
   <Label text="MIDI PITCH" class="h1 tagline m-t-10"></Label>
@@ -9,57 +9,64 @@
   ></Image>
 
   <FlexboxLayout
-    class="m-b-30 m-x-10 p-x-10"
+    class=""
     flexDirection="row"
-    justifyContent="space-between"
+    justifyContent="center"
     alignItems="center"
     height="10%"
     backgroundColor="#232323"
   >
-    <Button
-      text="Notes"
-      width="33%"
-      class="btn btn-primary c-black"
-      (tap)="goTo('notes')"
-    ></Button>
-    <Button
-      text="Scales"
-      width="33%"
-      class="btn btn-primary c-black"
-      (tap)="goTo('scales')"
-    ></Button>
+    <Button width="30%" class="btn btn-primary c-black" (tap)="goTo('notes')">
+      <FormattedString>
+        <Span text="Notes"></Span>
+      </FormattedString>
+    </Button>
+
+    <Button width="30%" class="btn btn-primary c-black" (tap)="goTo('scales')">
+      <FormattedString>
+        <Span text="Scales"></Span>
+      </FormattedString>
+    </Button>
 
     <Button
-      text="Settings"
-      width="33%"
+      width="30%"
       class="btn btn-primary c-black"
       (tap)="goTo('settings')"
-    ></Button>
+    >
+      <FormattedString>
+        <Span text="Settings"></Span>
+      </FormattedString>
+    </Button>
   </FlexboxLayout>
 
   <Label
     text="POC for Web/iOS/Android"
-    class="description mt-20 h3 text-center c-white"
+    class="description m-t-20 h1 underline text-center c-white"
   >
   </Label>
   <Label
-    text="Angular for templating"
-    class="description mt-20 h3 text-center c-white"
+    text="• Angular for templating"
+    class="description m-t-20 h3 text-center c-white"
   >
   </Label>
   <Label
-    text="NativeScript for cross-platform"
-    class="description mt-20 h3 text-center c-white"
+    text="• NativeScript for cross-platform"
+    class="description m-t-20 h3 text-center c-white"
   >
   </Label>
   <Label
-    text="NgRx for state management"
-    class="description mt-20 h3 text-center c-white"
+    text="• NgRx for state management"
+    class="description m-t-20 h3 text-center c-white"
   >
   </Label>
   <Label
-    class="m-t-10 m-t-20 h2 text-center yellow"
+    text="• TailwindCSS for styling"
+    class="description m-t-20 h3 text-center c-white"
+  ></Label>
+  <Label
+    class="org m-t-10 m-t-20 h2 text-center yellow"
     target="_blank"
+    text="• NgRx for state management"
     text="@RabbitFighterStudios on GitHub"
   >
   </Label>

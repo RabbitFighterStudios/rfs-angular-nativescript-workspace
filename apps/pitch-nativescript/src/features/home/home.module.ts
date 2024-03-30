@@ -2,19 +2,19 @@ import {
   CUSTOM_ELEMENTS_SCHEMA,
   NO_ERRORS_SCHEMA,
   NgModule,
-} from '@angular/core';
-import { Routes } from '@angular/router';
-import { NativeScriptRouterModule } from '@nativescript/angular';
+} from '@angular/core'
+import { Routes } from '@angular/router'
+import { NativeScriptRouterModule } from '@nativescript/angular'
 
-import { SharedModule } from '../shared/shared.module';
-import { HOME_COMPONENTS, HomeComponent } from './components';
+import { SharedModule } from '../shared/shared.module'
+import { HOME_COMPONENTS, HomeComponent } from './components'
 
 export const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
   },
-];
+]
 
 @NgModule({
   imports: [SharedModule, NativeScriptRouterModule.forChild(routes)],
