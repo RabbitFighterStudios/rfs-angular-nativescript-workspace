@@ -1,7 +1,7 @@
-import { isOdd } from './is-odd';
+import { isOdd } from './is-odd'
 
 describe('isOdd', () => {
   it('should work', () => {
-    expect(isOdd()).toEqual('is-odd');
-  });
-});
+    expect(isOdd(1)).toEqual('is-odd')
+  })
+})

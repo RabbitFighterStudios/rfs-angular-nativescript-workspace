@@ -25,7 +25,7 @@
         "main": "libs/is-even/src/index.ts",
         "tsConfig": "libs/is-even/tsconfig.lib.json",
         "assets": ["libs/is-even/*.md"],
-        "generatePackageJson": true,
+        "generatePackageJson": false,
         "format": ["cjs"]
       }
     },

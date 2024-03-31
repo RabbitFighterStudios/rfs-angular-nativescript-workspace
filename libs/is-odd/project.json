@@ -12,7 +12,7 @@
         "main": "libs/is-odd/src/index.ts",
         "tsConfig": "libs/is-odd/tsconfig.lib.json",
         "assets": ["libs/is-odd/*.md"],
-        "generatePackageJson": true,
+        "generatePackageJson": false,
         "format": ["cjs"]
       }
     },

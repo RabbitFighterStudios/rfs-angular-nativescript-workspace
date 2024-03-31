@@ -1,6 +1,5 @@
 {
   "ignorePatterns": ["**/*"],
-
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx", "*.json"],
@@ -10,13 +9,13 @@
           // https://nx.dev/nx-api/eslint-plugin/documents/dependency-checks
           "error",
           {
-            "buildTargets": ["build", "custom-build"], // add non standard build target names
-            "ignoredDependencies": ["lodash"], // these libs will be omitted from checks
             "includeTransitiveDependencies": true, // collect dependencies transitively from children
+            "buildTargets": ["build", "custom-build"] // add non standard build target names
+            /* "ignoredDependencies": ["lodash"], // these libs will be omitted from checks
             "ignoredFiles": ["webpack.config.js", "eslint.config.js"], // list of files that should be skipped for check
             "checkMissingDependencies": true, // toggle to disable
             "checkObsoleteDependencies": true, // toggle to disable
-            "checkVersionMismatches": true // toggle to disable
+            "checkVersionMismatches": true // toggle to disable */
           }
         ],
         "@nx/enforce-module-boundaries": [

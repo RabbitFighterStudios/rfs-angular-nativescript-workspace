@@ -1,5 +1,5 @@
-import { isEven } from '@rfs/is-even';
+import { isEven } from '@rfs-angular-nativescript-workspace/is-even'
 
 export function isOdd(x: number): boolean {
-  return !isEven(x);
+  return !isEven(x)
 }
